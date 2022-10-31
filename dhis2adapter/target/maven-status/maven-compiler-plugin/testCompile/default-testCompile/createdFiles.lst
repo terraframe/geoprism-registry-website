@@ -1,0 +1,9 @@
+net/geoprism/dhis2/dhis2adapter/OrgUnitRelationshipTest.class
+net/geoprism/dhis2/dhis2adapter/DHIS2BridgeTest.class
+net/geoprism/dhis2/dhis2adapter/TranslationsTest.class
+net/geoprism/dhis2/dhis2adapter/Constants.class
+net/geoprism/dhis2/dhis2adapter/AbstractTestConnector.class
+net/geoprism/dhis2/dhis2adapter/HTTPConnectorTest.class
+net/geoprism/dhis2/dhis2adapter/TestBridgeBuilder.class
+net/geoprism/dhis2/dhis2adapter/TestSingleResponseConnector.class
+net/geoprism/dhis2/dhis2adapter/FakeIdConnector.class

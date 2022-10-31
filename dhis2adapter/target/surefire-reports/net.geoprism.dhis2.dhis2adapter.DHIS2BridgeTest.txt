@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: net.geoprism.dhis2.dhis2adapter.DHIS2BridgeTest
+-------------------------------------------------------------------------------
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.116 sec

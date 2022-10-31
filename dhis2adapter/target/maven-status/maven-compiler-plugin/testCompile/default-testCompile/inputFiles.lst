@@ -1,0 +1,9 @@
+/home/justinlewis/git/geoprism-registry/dhis2adapter/src/test/java/net/geoprism/dhis2/dhis2adapter/AbstractTestConnector.java
+/home/justinlewis/git/geoprism-registry/dhis2adapter/src/test/java/net/geoprism/dhis2/dhis2adapter/FakeIdConnector.java
+/home/justinlewis/git/geoprism-registry/dhis2adapter/src/test/java/net/geoprism/dhis2/dhis2adapter/TranslationsTest.java
+/home/justinlewis/git/geoprism-registry/dhis2adapter/src/test/java/net/geoprism/dhis2/dhis2adapter/OrgUnitRelationshipTest.java
+/home/justinlewis/git/geoprism-registry/dhis2adapter/src/test/java/net/geoprism/dhis2/dhis2adapter/HTTPConnectorTest.java
+/home/justinlewis/git/geoprism-registry/dhis2adapter/src/test/java/net/geoprism/dhis2/dhis2adapter/DHIS2BridgeTest.java
+/home/justinlewis/git/geoprism-registry/dhis2adapter/src/test/java/net/geoprism/dhis2/dhis2adapter/Constants.java
+/home/justinlewis/git/geoprism-registry/dhis2adapter/src/test/java/net/geoprism/dhis2/dhis2adapter/TestSingleResponseConnector.java
+/home/justinlewis/git/geoprism-registry/dhis2adapter/src/test/java/net/geoprism/dhis2/dhis2adapter/TestBridgeBuilder.java
