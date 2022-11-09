@@ -28,7 +28,7 @@ aggregate data according to different hierarchies, use geographic objects as the
 between data sources and support the creation of GIS-based applications and maps based on a
 common geography.
 
-## MULTIPLE HIERARCHY MANAGEMENT
+## Multiple Hierarchy Management
 
 GeoPrism Registry provides a multi-
 organization environment that supports data
@@ -40,7 +40,7 @@ mandate and updates are automatically
 propagated to other organizations that
 reference them.
 
-## CHANGE OVER TIME
+## Change Over Time
 
 GeoPrism Registry tracks attributes,
 geometries, and relationships (including
@@ -50,13 +50,13 @@ can be generated for any point or period in
 time depending on the considered geographic
 object type.
 
-## INTEGRATING OFFICIAL AND UNOFFICIAL DATA
+## Integraging Official and Unofficial Data
 
 Data curated by official and unofficial groups
 can be harmonized to create a more complete
 picture of available data.
 
-## ACCESSIBILITY
+## Accessibility
 
 Each organization can decide if the content
 they are managing is to be accessed outside of
@@ -66,7 +66,7 @@ time or dates based on a given frequency.
 Historical versions are maintained for
 reference.
 
-## HISTORICAL EVENTS
+## Historical Events
 
 GeoPrism Registry allows capturing the
 necessary information to rebuild how specific
@@ -76,15 +76,12 @@ merged, upgraded or downgraded. This
 information presents an accurate historical
 picture key to conduct trend analysis.
 
-## UPDATING MECHANISM
+## Updating Mechanism
 
 GeoPrism Registry allows the operationalization of
 the updating mechanism associated with each
 geographic object it covers by providing a change
 management workflow that allows authorized
 users to submit change requests for approval.
-
-
-
 
 
