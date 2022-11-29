@@ -20,7 +20,7 @@ A single source of reference information for the standardization, management and
 
 - [User Documentation](https://terraframe-inc.gitbook.io/geoprism-registry-documentation/)
 - [Instalation Documentation (with Docker)](https://hub.docker.com/r/terraframe/geoprism-registry)
-- [API Documentation](https://georegistry-api-docs.geoprism.net/)
+- [API Documentation](https://api.geoprismregistry.com/)
 - [Specification](https://github.com/terraframe/common-geo-registry-specification)
 
 ---
