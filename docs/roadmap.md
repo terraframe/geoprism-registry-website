@@ -20,4 +20,4 @@ The GeoPrism Registry is designed and built by a community of partners. The road
 --- -->
 
 ## Roadmap
-[Roadmap link (external doc)](https://docs.google.com/document/d/1gManPUfI2ZdrEAJw9fEh4ZlCLpJNmR06bZgdZvXZH1c/edit?usp=sharing)
+[Roadmap (external doc)](https://docs.google.com/document/d/1gManPUfI2ZdrEAJw9fEh4ZlCLpJNmR06bZgdZvXZH1c/edit?usp=sharing)
