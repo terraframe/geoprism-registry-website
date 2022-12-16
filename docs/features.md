@@ -112,6 +112,28 @@ To maintain a single representation of a Geo-Object changes can be tracked throu
 # Data Integration
 Data imported to GeoPrism Regsitry is integrated into Geo-Object Types for specific hierarchies as Geo-Objects to maintain a single source of truth. Importing allows for both curating Geo-Objects and the relationships (links) getween Geo-Objects in a hierarchy.
 
+All data imports and updates are validated in multiple ways to maximize data integrity:
+
+**Geo-Object Validation**
+* Attribute type constraints are enforced that only allow values of types that match the type of the column. For instance, an integer or float attribute can only be assigned to a column which only has numeric cells. The types include:
+  * Text
+  * Localized Text
+  * Integer
+  * Decimal
+  * Date
+  * Boolean
+  * Term
+  * Classification
+* Geo-Objects can only be assigned to Geo-Object Types that are present in the Hierarchy definition.
+* Geo-Object updates check if Geo-Objects exist based on either code only or by code, label, or a synonym of a label.
+* If an existing Geo-Object match is found on update the time period must be valid.
+* Duplicate Geo-Objects are not allowed in the same Geo-Object Type. Uniqueness is determined by the import strategy setting.
+
+**Relationship Validation**
+* Parent matching ensures that matches are only created for Geo-Object Types that are above the target in the hierarchy tree.
+* Parent matching validates that the parent exists in the system and is valid for the given time range.
+* Checking for existing Geo-Objects can be done by either code only or by code, label, or a synonym of a label.
+
 ## Spreadsheet Imports
 Spreadsheets can be imported that include attribute data, coordinates (for point data), and hierarchies (when recorded in columns representing levels).
 
