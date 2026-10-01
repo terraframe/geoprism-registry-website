@@ -6,3 +6,9 @@
 _site
 Gemfile.lock
 node_modules
+
+# Build output and logs
+target/
+logs/
+*.log
+*.log.gz

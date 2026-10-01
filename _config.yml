@@ -14,21 +14,13 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: GeoPrism Registry
-description: A single source of reference information for the standardization, management and use of geographic data over time.
+description: An open-source platform for curating, governing, and sharing time-aware geospatial knowledge.
 #baseurl: "geoprism-registry" # the subpath of your site, e.g. /blog
 url: "https://geoprismregistry.com" # the base hostname & protocol for your site, e.g. http://example.com
 #url: "http://localhost:4000"
 
 permalink: pretty
-exclude: ["node_modules/", "*.gemspec", "*.gem", "Gemfile", "Gemfile.lock", "package.json", "package-lock.json",  "script/", "LICENSE.txt", "lib/", "bin/", "README.md", "Rakefile"
-, "docs/tests/"
-]
-
-# Regression tests
-# By default, the pages in /docs/tests are excluded when the ste is built.
-# To include them, comment-out the relevant line above.
-# Uncommenting the following line doesn't work - see https://github.com/jekyll/jekyll/issues/4791
-# include: ["docs/tests/"]
+exclude: ["node_modules/", "Dockerfile", "docker-compose.yml", "*.gemspec", "*.gem", "Gemfile", "Gemfile.lock", "package.json", "package-lock.json",  "script/", "LICENSE.txt", "lib/", "bin/", "README.md", "Rakefile"]
 
 # Set a path/url to a logo that will be displayed instead of the title
 #logo: "/assets/images/just-the-docs.png"
@@ -65,6 +57,8 @@ heading_anchors: true
 
 # Aux links for the upper right navigation
 aux_links:
+  "Documentation":
+    - "//docs.geoprismregistry.com/version/v2.0.0"
   "GeoPrism Registry on GitHub":
     - "//github.com/terraframe/geoprism-registry"
 
@@ -93,8 +87,8 @@ last_edit_time_format: "%b %e %Y at %I:%M %p" # uses ruby's time format: https:/
 # Footer "Edit this page on GitHub" link text
 gh_edit_link: false # show or hide edit this page link
 gh_edit_link_text: "Edit this page on GitHub"
-gh_edit_repository: "https://github.com/pmarsceill/just-the-docs" # the github URL for your repo
-gh_edit_branch: "master" # the branch that your docs is served from
+gh_edit_repository: "https://github.com/terraframe/geoprism-registry-website" # the github URL for your repo
+gh_edit_branch: "gh-pages" # the branch that your docs is served from
 # gh_edit_source: docs # the source that your files originate from
 gh_edit_view_mode: "tree" # "tree" or "edit" if you want the user to jump into the editor immediately
 
