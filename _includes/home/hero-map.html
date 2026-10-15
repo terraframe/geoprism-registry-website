@@ -1,0 +1,45 @@
+{%- assign map = site.data.home.map -%}
+<figure class="map-card">
+  <div class="map-card__bar">
+    <span class="eyebrow eyebrow--muted">{{ map.eyebrow }}</span>
+    <div class="toggle" role="group" aria-label="{{ map.group_label }}">
+      <button type="button" class="toggle__btn" data-year="before" aria-pressed="true" aria-controls="map-before map-after">{{ map.before.year }}</button>
+      <button type="button" class="toggle__btn" data-year="after" aria-pressed="false" aria-controls="map-before map-after">{{ map.after.year }}</button>
+    </div>
+  </div>
+
+  <div class="map-card__map" id="map-before" data-map="before">
+    <svg class="map" viewBox="0 0 400 300" role="img" aria-label="Region in {{ map.before.year }} with three districts: North, Central and South">
+      <polygon class="map__area" points="40,40 360,30 365,110 35,120"></polygon>
+      <polygon class="map__area map__area--changed" points="35,120 365,110 370,140 360,195 32,200 30,160"></polygon>
+      <polygon class="map__area" points="32,200 360,195 350,270 60,280"></polygon>
+      <text class="map__name" x="200" y="80">North</text>
+      <text class="map__id" x="200" y="98">ID 0101</text>
+      <text class="map__name" x="200" y="158">Central</text>
+      <text class="map__id" x="200" y="176">ID 0102</text>
+      <text class="map__name" x="200" y="240">South</text>
+      <text class="map__id" x="200" y="258">ID 0103</text>
+    </svg>
+  </div>
+
+  <div class="map-card__map" id="map-after" data-map="after" hidden>
+    <svg class="map" viewBox="0 0 400 300" role="img" aria-label="Region in {{ map.after.year }}: Central has split into Central West and Central East">
+      <polygon class="map__area" points="40,40 360,30 365,110 35,120"></polygon>
+      <polygon class="map__area map__area--changed" points="35,120 205,115 195,198 32,200 30,160"></polygon>
+      <polygon class="map__area map__area--changed" points="205,115 365,110 370,140 360,195 195,198"></polygon>
+      <polygon class="map__area" points="32,200 360,195 350,270 60,280"></polygon>
+      <text class="map__name" x="200" y="80">North</text>
+      <text class="map__id" x="200" y="98">ID 0101</text>
+      <text class="map__name map__name--sm" x="115" y="158">Central West</text>
+      <text class="map__id" x="115" y="176">ID 0104</text>
+      <text class="map__name map__name--sm" x="285" y="158">Central East</text>
+      <text class="map__id" x="285" y="176">ID 0105</text>
+      <text class="map__name" x="200" y="240">South</text>
+      <text class="map__id" x="200" y="258">ID 0103</text>
+    </svg>
+  </div>
+
+  <figcaption class="map-card__caption" id="map-caption" aria-live="polite"
+    data-caption-before="{{ map.before.caption | escape }}"
+    data-caption-after="{{ map.after.caption | escape }}">{{ map.before.caption }}</figcaption>
+</figure>

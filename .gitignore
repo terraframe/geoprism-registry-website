@@ -6,6 +6,7 @@
 _site
 Gemfile.lock
 node_modules
+vendor/
 
 # Build output and logs
 target/

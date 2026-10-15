@@ -1,0 +1,170 @@
+# Copy for the home page (_layouts/home.html).
+# Edit text here; the layout renders it. Keep the quotes around values that
+# contain colons, apostrophes or start with "[".
+# Placeholders in [BRACKETS] are still to be filled in.
+
+nav:
+  - label: "How it works"
+    url: "#how"
+  - label: "Use cases"
+    url: "#uses"
+  - label: "What's new"
+    url: "#new"
+  - label: "Community"
+    url: "#community"
+  - label: "Documentation"
+    url: "https://docs.geoprismregistry.com/version/v2.0.0"
+github_url: "https://github.com/terraframe/geoprism-registry"
+
+hero:
+  license_badge: "Open source · LGPL"
+  # Official DPGA badge (brand standard). Do not restyle.
+  dpg_badge_alt: "Verified Digital Public Good (DPG badge, opens in a new tab)"
+  dpg_badge_src: "https://img.shields.io/badge/Verified-DPG-3333AB?logo=data:image/svg%2bxml;base64,PHN2ZyB3aWR0aD0iMzEiIGhlaWdodD0iMzMiIHZpZXdCb3g9IjAgMCAzMSAzMyIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTE0LjIwMDggMjEuMzY3OEwxMC4xNzM2IDE4LjAxMjRMMTEuNTIxOSAxNi40MDAzTDEzLjk5MjggMTguNDU5TDE5LjYyNjkgMTIuMjExMUwyMS4xOTA5IDEzLjYxNkwxNC4yMDA4IDIxLjM2NzhaTTI0LjYyNDEgOS4zNTEyN0wyNC44MDcxIDMuMDcyOTdMMTguODgxIDUuMTg2NjJMMTUuMzMxNCAtMi4zMzA4MmUtMDVMMTEuNzgyMSA1LjE4NjYyTDUuODU2MDEgMy4wNzI5N0w2LjAzOTA2IDkuMzUxMjdMMCAxMS4xMTc3TDMuODQ1MjEgMTYuMDg5NUwwIDIxLjA2MTJMNi4wMzkwNiAyMi44Mjc3TDUuODU2MDEgMjkuMTA2TDExLjc4MjEgMjYuOTkyM0wxNS4zMzE0IDMyLjE3OUwxOC44ODEgMjYuOTkyM0wyNC44MDcxIDI5LjEwNkwyNC42MjQxIDIyLjgyNzdMMzAuNjYzMSAyMS4wNjEyTDI2LjgxNzYgMTYuMDg5NUwzMC42NjMxIDExLjExNzdMMjQuNjI0MSA5LjM1MTI3WiIgZmlsbD0id2hpdGUiLz4KPC9zdmc+Cg=="
+  dpg_url: "https://www.digitalpublicgoods.net/r/geoprism-registry"
+  title: "Make your data time-aware, location-aware, and AI-ready, with provenance built in."
+  lead: "Geoprism Registry is a translation layer that helps organizations bring time-aware data into AI while maintaining high quality, common geographies, common IDs, and provenance. It keeps a shared, authoritative record of geographic places, including their boundaries, relationships, and history, so data from many systems lines up, stays correct as the map changes, and can always be traced back to its source."
+  primary_cta:
+    label: "See how it works"
+    url: "#how"
+  secondary_cta:
+    label: "Read the documentation"
+    url: "https://docs.geoprismregistry.com/version/v2.0.0"
+
+map:
+  eyebrow: "Track how locations change"
+  group_label: "Choose a year"
+  before:
+    year: "2018"
+    caption: "In 2018 the region has three districts. Records from that year are tied to these boundaries."
+  after:
+    year: "2024"
+    caption: "In 2021 Central split in two. New IDs are issued, the change is recorded, and 2018 data still resolves to the geography that applied then."
+
+why:
+  eyebrow: "Why it matters"
+  title: "Location and time are what bind information together."
+  cards:
+    - title: "Organizations use duplicate data"
+      text: "A health ministry, a statistics office and a relief program each keep their own district names and codes. Their data can't be combined without manual matching."
+    - title: "Boundaries change, and history breaks"
+      text: "When a district splits or merges, years of trend data are quietly compared against the wrong geography unless the change itself is recorded."
+    - title: "AI doesn't know your geography"
+      text: "Language models have no reliable knowledge of which places exist, how they relate, or how they've changed. They need a trusted, traceable source to draw on."
+
+how:
+  eyebrow: "How it works"
+  title: "From siloed data to shared, trusted knowledge"
+  lead: "Each organization keeps curating the data it is mandated to maintain. Geoprism Registry connects that work by enabling common identifiers, common definitions and a record of where every value came from."
+  # icon: one of integrate, enhance, publish, assess (see _includes/home/icon.html)
+  steps:
+    - title: "Integrate"
+      icon: integrate
+      text: "Bring in place lists, boundaries and related records from each responsible authority, keeping the source of every value."
+    - title: "Enhance"
+      icon: enhance
+      text: "Link places into hierarchies and networks, classify them with shared vocabularies, and track every change through time."
+    - title: "Publish"
+      icon: publish
+      text: "Share versioned, authoritative geographies and knowledge graphs with information systems, analysts and AI tools."
+  # Shown when screenshot_src is empty.
+  screenshot_placeholder: "[PRODUCT SCREENSHOT: Explorer with map, hierarchy and graph visualizer]"
+  screenshot_src: "/assets/images/home/explorer-graph.webp"
+  screenshot_alt: "Geoprism Registry Explorer showing a graph that links two flood scenarios to a land parcel, next to a satellite map with flood risk areas and parcels overlaid"
+
+uses:
+  eyebrow: "Where it's used"
+  title: "A common geography for work that crosses sectors"
+  cases:
+    - title: "Public health"
+      text: "Align facility and district data across health information systems for microplanning, campaigns and trend analysis, including FHIR export."
+    - title: "National statistics"
+      text: "Publish common geographies for census and survey results so statistics can be compared across agencies and across years."
+    - title: "Spatial data infrastructure"
+      text: "Host and regularly update the core geographic objects a country relies on, while respecting each agency's curation mandate."
+    - title: "AI and knowledge graphs"
+      text: "Give AI systems trusted, time-aware geographic knowledge, while organizations keep sovereignty over their data."
+  aligned_label: "Aligned with"
+  # Leave url empty for items that should not be links.
+  aligned:
+    - label: "UN-IGIF"
+      url: "https://ggim.un.org/IGIF/"
+    - label: "Global Statistical Geospatial Framework"
+      url: "https://unstats.un.org/unsd/statcom/51st-session/documents/The_GSGF-E.pdf"
+    - label: "Geospatial Knowledge Infrastructure"
+      url: "https://geospatialmedia.net/pdf/GKI-White-Paper.pdf"
+    - label: "HL7 FHIR & IHE mCSD"
+      url: ""
+    - label: "UN Sustainable Development Goals"
+      url: ""
+    - label: "Common Geo-Registry"
+      url: "https://github.com/terraframe/common-geo-registry-specification"
+
+new:
+  eyebrow: "New in version 2.0"
+  title: "More connected, more traceable, ready for AI"
+  link_label: "See all features"
+  link_url: "/docs/features/"
+  features:
+    - title: "Publish knowledge graphs"
+      text: "Share versioned spatial knowledge graphs of places, programs and concepts, synchronized to standard graph databases."
+    - title: "Shared vocabularies"
+      text: "Classify data with controlled vocabularies and taxonomies that can be used across datasets."
+    - title: "Link programs and people to places"
+      text: "Manage non-spatial records like programs, staff or survey results alongside the geography they relate to."
+    - title: "Beyond hierarchies"
+      text: "Model real-world networks, like rivers that flow into each other or areas that share a border."
+    - title: "Know where every value came from"
+      text: "Record which authority is responsible for each dataset and which source supplied each value."
+    - title: "Undo any import"
+      text: "Every import creates a checkpoint you can roll back, so mistakes never become permanent."
+
+partners:
+  eyebrow: "Built together"
+  title: "Developed in partnership with and supported by"
+  lead: "Geoprism Registry is the first open-source implementation of the Common Geo-Registry vision of Health GeoLab Collaborative, developed with partners across public health and spatial data communities."
+  # For a logo, add logo: /assets/images/partners/name.svg (name is used as alt text).
+  # TODO: replace the two placeholder entries with funding partner logos.
+  list:
+    - name: "Health GeoLab Collaborative"
+    - name: "Clinton Health Access Initiative"
+    - name: "Vital Wave"
+    - name: "DSME community partners"
+    - placeholder: "[FUNDING PARTNER LOGO]"
+    - placeholder: "[FUNDING PARTNER LOGO]"
+
+community:
+  eyebrow: "Open source"
+  title: "Free to use, adapt and deploy"
+  text: "Released under the GNU LGPL and built entirely from open-source components. Distributed as a Docker image for cloud or on-premises deployment."
+  primary_cta:
+    label: "Install with Docker"
+    url: "https://docs.geoprismregistry.com/version/v2.0.0/deployment-and-setup/creating-a-new-installation"
+  secondary_cta:
+    label: "View on GitHub"
+    url: "https://github.com/terraframe/geoprism-registry"
+  columns:
+    - title: "Documentation"
+      links:
+        - label: "User guide (v2.0)"
+          url: "https://docs.geoprismregistry.com/version/v2.0.0"
+        - label: "Installation"
+          url: "https://docs.geoprismregistry.com/version/v2.0.0/deployment-and-setup/creating-a-new-installation"
+        - label: "API reference"
+          url: "https://api.geoprismregistry.com/"
+        - label: "CGR specification"
+          url: "https://github.com/terraframe/common-geo-registry-specification"
+    - title: "Community"
+      links:
+        - label: "Contributing"
+          url: "https://github.com/terraframe/geoprism-registry/wiki/Contribution-Guidelines"
+        - label: "Governance"
+          url: "https://github.com/terraframe/geoprism-registry/wiki/Governance"
+        - label: "Report an issue"
+          url: "https://github.com/orgs/terraframe/projects/2"
+        - label: "Code of conduct"
+          url: "https://github.com/terraframe/geoprism-registry/blob/master/code-of-conduct.md"
+
+footer:
+  left: "Geoprism Registry is a verified Digital Public Good."
+  right: "Maintained by TerraFrame and contributors · LGPL"

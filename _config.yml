@@ -13,14 +13,14 @@
 # you will see them accessed via {{ site.title }}, {{ site.github_repo }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: GeoPrism Registry
+title: Geoprism Registry
 description: An open-source platform for curating, governing, and sharing time-aware geospatial knowledge.
 #baseurl: "geoprism-registry" # the subpath of your site, e.g. /blog
 url: "https://geoprismregistry.com" # the base hostname & protocol for your site, e.g. http://example.com
 #url: "http://localhost:4000"
 
 permalink: pretty
-exclude: ["node_modules/", "Dockerfile", "docker-compose.yml", "*.gemspec", "*.gem", "Gemfile", "Gemfile.lock", "package.json", "package-lock.json",  "script/", "LICENSE.txt", "lib/", "bin/", "README.md", "Rakefile"]
+exclude: ["vendor/", "node_modules/", "Dockerfile", "docker-compose.yml", "*.gemspec", "*.gem", "Gemfile", "Gemfile.lock", "package.json", "package-lock.json",  "script/", "LICENSE.txt", "lib/", "bin/", "README.md", "Rakefile"]
 
 # Set a path/url to a logo that will be displayed instead of the title
 #logo: "/assets/images/just-the-docs.png"
@@ -59,7 +59,7 @@ heading_anchors: true
 aux_links:
   "Documentation":
     - "//docs.geoprismregistry.com/version/v2.0.0"
-  "GeoPrism Registry on GitHub":
+  "Geoprism Registry on GitHub":
     - "//github.com/terraframe/geoprism-registry"
 
 # Makes Aux links open in a new tab. Default is false

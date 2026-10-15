@@ -4,10 +4,10 @@ title: Features
 nav_order: 3
 ---
 
-# GeoPrism Registry Features
+# Geoprism Registry Features
 {: .no_toc }
 
-This page describes the features of GeoPrism Registry 2.0. For step-by-step instructions see the [user documentation](https://docs.geoprismregistry.com/version/v2.0.0).
+This page describes the features of Geoprism Registry 2.0. For step-by-step instructions see the [user documentation](https://docs.geoprismregistry.com/version/v2.0.0).
 {: .fs-6 .fw-300 }
 
 ## Table of contents
@@ -22,19 +22,19 @@ This page describes the features of GeoPrism Registry 2.0. For step-by-step inst
 # System Management
 
 ## Localization
-GeoPrism Registry can be localized to different languages for both application pages and data elements including:
+Geoprism Registry can be localized to different languages for both application pages and data elements including:
 * Geo-Object Types, Business Types, and Concepts
 * Hierarchies
 * Geo-Objects (including attributes)
 * Lists
 
-Locales are installed, translated through an exported spreadsheet, and imported back into the system. This makes it possible to navigate the system and record data in multiple languages, with full Unicode support.
+This makes it possible to navigate the system and record data in multiple languages.
 
 ## Organization Management
-GeoPrism Registry supports the management of lists, spatial data, hierarchies, and business data across multiple organizations, so that only those with the responsibility to maintain data for a given organization can do so. Organizations can be arranged into a parent/child organization hierarchy.
+Geoprism Registry supports the management of lists, spatial data, hierarchies, and business data across multiple organizations, so that only those with the responsibility to maintain data for a given organization can do so.
 
 ## User Management
-GeoPrism Registry supports management of users within and across organizations. Users can be added directly or invited by email, and accounts can be configured to log in through an external OAuth provider.
+Geoprism Registry supports management of users within and across organizations. Users can be added directly or invited by email, and accounts can be configured to log in through an external OAuth provider.
 
 **User Roles Within Organizations:**
 * Registry Administrator (RA): defines types, hierarchies, Concepts, and Business Types; registers external systems and synchronizations; assigns roles
@@ -45,17 +45,17 @@ GeoPrism Registry supports management of users within and across organizations. 
 * System Administrator (SA): configures organizations, localization, branding, email, and type configuration import/export
 
 ## Email Notifications
-GeoPrism Registry uses email settings to send notifications to users of the system, in particular account invitations and automated change request notifications.
+Geoprism Registry uses email settings to send notifications to users of the system, in particular account invitations and automated change request notifications.
 
 ## Branding
 The system logo and branding can be customized for each installation.
 
 
 # Configure
-GeoPrism Registry is configured by defining the structure of the data before loading it. The recommended order is Source Authorities and Data Sources, then Concepts, then Geo-Object Types and hierarchies, then Business Types.
+Geoprism Registry is configured by defining the structure of the data before loading it. The recommended order is Source Authorities and Data Sources, then Concepts, then Geo-Object Types and hierarchies, then Business Types.
 
 ## Source Authorities
-A Source Authority records who is responsible for a set of data, such as a government agency, statistical agency, mapping agency, research organization, NGO, or community organization. Source Authorities issue alternative IDs, which are stored alongside GeoPrism Registry codes and can be used to match records during import.
+A Source Authority records who is responsible for a set of data, such as a government agency, statistical agency, mapping agency, research organization, NGO, or community organization. Source Authorities issue alternative IDs, which are stored alongside Geoprism Registry codes and can be used to match records during import.
 
 ## Data Sources
 A Data Source records the provenance of imported data, including its URI, governance level (Authoritative, Official, Community Curated, Research, Derived, Experimental, or Ad Hoc), and metadata profile (such as DCAT, GeoDCAT, ISO 19115, STAC, or FHIR). The Data Source is stored with every value it supplies for the period of validity of the import.
@@ -69,7 +69,7 @@ Concepts provide controlled vocabularies used to classify data.
 A Geo-Object Type can be assigned a Concept Set, which adds a classification attribute to its Geo-Objects.
 
 ## Geo-Object Types
-GeoPrism Registry organizes geographic data by Geo-Object Types, which are containers for Geo-Objects of the same kind that share the same data schema. Each type has a code, label, description, visibility (public or private), geometry type (point, line, polygon, or mixed), owning organization, and an optional Concept Set.
+Geoprism Registry organizes geographic data by Geo-Object Types, which are containers for Geo-Objects of the same kind that share the same data schema. Each type has a code, label, description, visibility (public or private), geometry type (point, line, polygon, or mixed), owning organization, and an optional Concept Set.
 
 ### Customization (e.g. custom attributes)
 Geo-Object Types have default attributes and can be extended with custom attributes of the following types:
@@ -96,13 +96,13 @@ Geo-Object Types can participate in multiple hierarchies to fit different operat
 Hierarchies can be shared across organizations using inheritance. Geo-Objects and the relationships between them are managed by an authoritative group while being extended by another organization's hierarchy.
 
 ## Graph Types
-Not all relationships between places are hierarchical. Directed Acyclic Graph Types (for example, a river that flows into another river) and Undirected Graph Types (for example, districts that are adjacent to each other) relate Geo-Objects outside of a hierarchy.
+Not all relationships between places are hierarchical. Directed Acyclic Graph Types (for example, a river that flows into another river) relate Geo-Objects outside of a hierarchy.
 
 ## Business Types
 Business Types manage non-geospatial data such as programs, staff, or survey results. Each Business Type has its own attributes, which can optionally change over time. Business Edge Types link business objects to each other or to Geo-Objects.
 
 ## Configuration-Based Setup
-Geo-Object Types, hierarchies, graph types, Business Types, and Concepts can be defined in an XML configuration file and imported or exported, making it easy to reproduce a configuration across installations.
+Geo-Object Types, hierarchies, graph types, Business Types, and Concepts can be defined in a configuration file and imported or exported, making it easy to reproduce a configuration across installations.
 
 
 # Change Over Time
@@ -112,7 +112,7 @@ To maintain a single representation of a Geo-Object, changes are tracked through
 # Curate
 
 ## Import Geospatial Data
-Data imported to GeoPrism Registry is integrated into Geo-Object Types as Geo-Objects to maintain a single source of truth. Imports curate both Geo-Objects and their relationships in a hierarchy.
+Data imported to Geoprism Registry is integrated into Geo-Object Types as Geo-Objects to maintain a single source of truth. Imports curate both Geo-Objects and their relationships in a hierarchy.
 
 * **Spreadsheets** (XLS/XLSX) can include attribute data, coordinates for point data, and hierarchy levels recorded in columns.
 * **Shapefiles** can include attribute data as well as point, line, or polygon geometries.
@@ -150,13 +150,13 @@ Each import creates a rollback checkpoint. If a problem is found after an import
 Registry Contributors submit changes to Geo-Objects as change requests, which are reviewed by Registry Maintainers or Administrators. Reviewers can accept or reject each change individually, add notes, involve additional decision makers, and review attached reference documents.
 
 ## Historical Events
-GeoPrism Registry captures changes to Geo-Objects such as splits, merges, reassignments, upgrades (moving up the hierarchy), and downgrades (moving down the hierarchy). Events record the Geo-Objects before and after the change and its impact, can be filtered by Geo-Object Type, and can be exported to a spreadsheet.
+Geoprism Registry captures changes to Geo-Objects such as splits, merges, reassignments, upgrades (moving up the hierarchy), and downgrades (moving down the hierarchy). Events record the Geo-Objects before and after the change and its impact, can be filtered by Geo-Object Type, and can be exported to a spreadsheet.
 
 
 # Explore
 
 ## Explorer
-The GeoPrism Registry Explorer allows for finding, viewing, comparing, and editing geospatial data.
+The Geoprism Registry Explorer allows for finding, viewing, comparing, and editing geospatial data.
 
 * **View data spatially**: points, lines, and polygons can all be visualized and edited, with layers found by date range.
 * **Context layers**: geospatial data from other lists in the system can be added to the map to build a more complete picture.
@@ -181,11 +181,11 @@ A Spatial Knowledge Graph (SKG) bundles Geo-Object Types, hierarchies, graph typ
 
 
 # External System Integration
-GeoPrism Registry integrates with external systems to exchange data.
+Geoprism Registry integrates with external systems to exchange data.
 
 **Supported Integrations**
 * **Apache Jena**: published Spatial Knowledge Graphs are synchronized to a named graph in a SPARQL triple store, such as Apache Jena Fuseki or Amazon Neptune (with IAM authentication).
 * **Fast Healthcare Interoperability Resources® (FHIR)**: lists are exported to a FHIR server using basic or IHE Mobile Care Services Discovery (mCSD) profiles. Custom FHIR import and export implementations can be added as plugins.
 
 ## REST API
-GeoPrism Registry provides a REST API for reading and working with registry data, including lookup by external system identifiers. Public data is available through the API to any deployment. See the [API documentation](https://api.geoprismregistry.com/).
+Geoprism Registry provides a REST API for reading and working with registry data, including lookup by external system identifiers. Public data is available through the API to any deployment. See the [API documentation](https://api.geoprismregistry.com/).
